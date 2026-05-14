@@ -1,6 +1,6 @@
 # Week 5: Threads
 
-**Repository:** https://github.com/ziv236/advanced-sys-programming-ex5/blob/main/README.md
+**Repository:** https://github.com/ziv236/advanced-sys-programming-ex5/blob/main
 
 ---
 
