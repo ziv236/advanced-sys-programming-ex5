@@ -8,7 +8,7 @@
 
 Ran the code from the multi-threading slides (page 22). The code creates 5 threads, each printing its ID to stdout.
 
-**Compile & run:**
+**Compile & run on LINUX os:**
 ```bash
 g++ -std=c++11 task1.cpp -o task1 -pthread
 ./task1
@@ -22,7 +22,7 @@ The original code from Task 1 sometimes produces garbled output because multiple
 
 **Fix:** Added a `std::mutex` and call `mtx.lock()` before printing and `mtx.unlock()` after. This ensures only one thread can print at a time, so each thread gets a clean, separate line.
 
-**Compile & run:**
+**Compile & run on LINUX os:**
 ```bash
 g++ -std=c++11 task2.cpp -o task2 -pthread
 ./task2
@@ -32,7 +32,7 @@ g++ -std=c++11 task2.cpp -o task2 -pthread
 
 ## Task 3 – Java Race Condition
 
-**Run:**
+**Run on WINDOWS OS:**
 ```bash
 javac task3.java && java Foo
 ```
@@ -52,7 +52,7 @@ Since both threads run concurrently, the following scenario can occur: Thread A 
 
 ## Task 4 – synchronized Methods
 
-**Run:**
+**Run on WINDOWS OS:**
 ```bash
 javac Foo.java && java Foo
 ```
@@ -68,7 +68,7 @@ This way, `bar++` always finishes completely before another thread can start —
 
 ## Task 5 – synchronized(this) Block
 
-**Run:**
+**Run on WINDOWS OS:**
 ```bash
 javac Foo.java && java Foo
 ```
@@ -86,7 +86,7 @@ In this case the result is the same (always 20,000), since `baz()` only contains
 
 ## Task 6 – Performance: No Synchronization
 
-**Run:**
+**Run on WINDOWS OS:**
 ```bash
 javac Foo.java && java Foo
 ```
@@ -109,7 +109,7 @@ The time is very short (~70ms) because threads run freely with no locking overhe
 
 ## Task 7 – Performance: With synchronized(this)
 
-**Run:**
+**Run on WINDOWS OS:**
 ```bash
 javac Foo.java && java Foo
 ```
